@@ -5,11 +5,9 @@ import com.example.demo.one_to_n.entity.Company;
 import com.example.demo.one_to_n.repositroies.CompanyRepository;
 import com.example.demo.one_to_n.repositroies.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;

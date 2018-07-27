@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.99.100:3306/company_db?useSSL=false #useSSL=false解决不建议在没有服务器身份验证的情况下建立SSL连接的警告
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect # Hibernate 属性，SQL 方言使得 Hibernate 为所选数据库生成更好的 SQL
+        show_sql: true #配置输出所有SQL语句到控制台
+        format_sql: true #在log和console中格式化SQL语句
+        use_sql_comments: true #如果开启, Hibernate将在SQL中生成有助于调试的注释信息, 默认值为false
+        generate_statistics: false #如果开启, Hibernate将收集有助于性能调节的统计数据
